@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tela home professor</title>
+    <style>
+        body{
+            background: rgb(30, 30, 116);
+            color: white;
+            font-family: sans-serif;
+            text-align: center;
+        }
+        input{
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        button{
+            color: white;
+            background: blue;
+            padding: 10px 20px;
+            border: 1px solid white;
+            border-radius: 5px;
+        }
+        button:hover{
+            color: blue;
+            background: white;
+            padding: 10px 20px;
+            border: 1px solid blue;
+            border-radius: 5px;
+        }
+
+        table {
+            font-family: arial, sans-serif;
+            border-collapse: collapse;
+            width: 100%;
+        }
+        th{
+            background: rgb(104, 104, 104);
+        }
+        td, th {
+            border: 1px solid #dddddd;
+            text-align: left;
+            padding: 8px;
+        }
+
+        tr:nth-child(even) {
+            background-color: black;
+        }
+    </style>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <h1>Tela Home Professor</h1>
+    <form action="">
+        <input type="text" placeholder="Pesquisar o equipamento">
+        <button>Pesquisar</button>
+    </form><br>
+    <table>
+        <tr>
+          <th>Nome do Equipamento</th>
+          <th>Status</th>
+          <th>Ver Detalhes</th>
+        </tr>
+        <tr>
+          <td>Data-Show</td>
+          <td>Disponível</td>
+          <td><i class="fas fa-edit"></i></td>
+        </tr>
+        <tr>
+          <td>DVD</td>
+          <td>Disponível</td>
+          <td><i class="fa fa-search"></i></td>
+        </tr>
+        <tr>
+          <td>Caixa de Som</td>
+          <td>Disponível</td>
+          <td><i class="fa fa-search"></i></td>
+        </tr>
+        <tr>
+          <td>Televisão</td>
+          <td>Disponível</td>
+          <td><i class="fa fa-search"></i></td>
+        </tr>
+        <tr>
+          <td>Notebook</td>
+          <td>Dísponível</td>
+          <td><i class="fa fa-search"></i></td>
+        </tr>
+        <tr>
+          <td>Projetor</td>
+          <td>Indisponível</td>
+          <td><i class="fa fa-search"></i></i></td>
+        </tr>
+      </table>
+
+</body>
+</html>

@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- Otimiza a visualização da página em mobiles,
+    initial-scale=1 (controla o nível de amplificação quando a página é
+    carregada pela primeira vez, e se o valor for 1 a página
+    será renderizada o mais próximo possível do tamanho físico
+    do dispositvo)-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>With HTML</title>
+    <link rel="icon" href="files/imagem.jpg">
+    <style>
+        @font-face {
+            font-family: Pokemon;
+            src: url('./pokemon.ttf');
+        }
+        @font-face {
+            font-family: Pokemons;
+            src: url('./pokemons.ttf');
+        }
+        h1 {
+            color: rgb(18, 18, 221);  
+            font-family: Pokemon;
+            font-style: italic;
+            font-weight: bolder;
+        }
+        h2 {
+            font-family: Pokemons;
+        }
+        div {
+            /*
+            background: rgba(143, 140, 140, 0.15);
+            border-width: 3px;
+            border-style: solid;
+            border-color: rgb(117, 117, 221);
+            
+            border: 5px solid rgb(110, 97, 224);
+            border-radius: 10px; */
+            /* Margin é referente as bordas do elemento,
+            padding é referente dentro do elemento */
+            width: 300px;
+            background: green;
+            margin: 10px 20px;
+            padding: 10px;
+        }
+        #caixa{
+            width: 300px;
+            height: 300px;
+            background: rgb(54, 54, 209);
+            box-shadow: 10px 10px 10px rgb(0, 0, 0, 0.3);
+        }
+        #ball{
+            width: 150px;
+            height: 150px;
+            background-color: cadetblue;
+            border-color: rgb(59, 59, 58);
+            border-radius: 100%;
+        }
+        p {
+            text-align: right;
+            text-transform: uppercase;
+            line-height: 20px;
+            word-spacing: 10px;
+            letter-spacing: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello World</h1>
+    </header>
+    
+    <main>
+        <section>
+            <h2>Pokémon</h2>
+            <div id="ball">
+
+            </div>
+            <a href="contato.html">Ir para contato</a>
+            <!-- <a href="./subpasta/contato.html">Ir para contato</a>-->
+
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. A aperiam suscipit error ut id tempore facere rerum adipisci, ipsam quod quidem, minus ex repud
+            iandae nihil nesciunt ipsa, rem autem facilis.</p>
+            <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Recusandae, quo sed eligendi dicta corrupti quisquam dolores laudantium ipsum, tempore saepe quas modi. Amet ab molestiae ipsam voluptas saepe repellendus consectetur.</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi aliquam alias, sit, in necessitatibus sint earum laboriosam fugit amet repellat dicta cum quam ipsam impedit expedita veritatis maxime debitis! Veniam.</p>
+            <b>Este [e um texto em negrito</b><br>
+            <small>Este um texto menor</small>
+
+            <p>Nao esqueca de comprar o <mark>pao</mark> hoje</p>
+        </section>
+        <section>
+            <a href="https://www.google.com/" target="_blank">Pagina google</a>
+            <br>
+            <img src="files/imagem.jpg" width="300px" alt="Cachorro">
+            <audio controls><br>
+                <source src="files/audio.mp3" type="audio/mpeg">
+            </audio><br>
+
+            <video controls width="300px">
+                <source src="files/video.mp4" type="video/mp4"> 
+            </video><br>
+        </section>
+        <nav>
+            <ul>
+                <li>Item 1</li>
+                <li>Item 2</li>
+                <li>Item 3</li>
+                <li><a href="http://google.com" target="_blank" rel="noopener noreferrer">
+                Google
+                </a></li>
+            </ul><br>   
+        </nav>
+    
+        <div>
+            <p>Formulário de Login</p>
+            <form action="">
+                Digite seu email:
+                <input type="email" placeholder="Digite seu email" required><br>
+                Digite sua senha: 
+                <input type="password" placeholder="Digite sua senha"required><br>
+                <input type="radio" name="genero" id=""> Masculino<br>
+                <input type="radio" name="genero" id=""> Feminino<br><br>
+                <textarea name="" placeholder="Mensagem" id="" cols="30" rows="10"></textarea>
+                <select name="" id="">
+                    <option value="">Sugestão</option>
+                    <option value="">Reclamação</option>
+                    <option value="">Suporte</option>
+                </select><br>
+                <input type="file" name="" id=""><br>
+                <button type="submit">Entrar</button>
+            </form>
+        </div>
+        <div id="caixa">
+
+        </div>
+        <div>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quo sapiente tempora ducimus quaerat ex dolor laboriosam reiciendis. Officia quos nulla quibusdam odio nisi, necessitatibus ratione sed! Amet dicta eaque vero?
+        </div>
+    </main>
+    <footer>
+        Final da página (RODAPÉ)
+    </footer>
+</body>
+</html>

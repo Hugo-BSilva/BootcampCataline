@@ -1,0 +1,10 @@
+button{
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-transform: capitalize;
+    background-color: rgb(32, 32, 238);
+    padding: 6px 15px;
+    border: none;
+    border-radius: 6px;
+    outline: none;
+}
