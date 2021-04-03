@@ -50,3 +50,9 @@ document.querySelector('#app button').addEventListener
 document.querySelector('#app input#outro').addEventListener
 ('keypress', function(){alert('Você pressionou uma tecla')
 })
+
+
+var location = window.location.href = "http://127.0.0.1:5500/Testando%20Programa%20PIMV/Criando%20Menu/menu.html";
+document.querySelector('button').addEventListener
+    ('click', function() { location
+}) 
