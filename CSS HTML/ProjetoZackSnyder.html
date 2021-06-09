@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <title>Testes</title>
+    <style>
+        @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
+        *{margin:0; padding:0; font-size: 100%; border:none; outline: none; font-weight: 300; 
+        box-sizing: border-box; font-family: 'Roboto', sans-serif;} 
+        /* MEDIA TYPES screen
+        Para monitores ou dispositivos com telas coloridas e resoluções adequadas.
+        print
+        para impressoras*/
+        @media screen and (min-width: 320px){}
+        body{
+            background-color: rgba(0, 0, 0, 0.089);
+        }
+        header{
+            position: absolute;
+        }
+        #header{
+            background-color: rgb(255,140,0);
+            height:4%;
+            width: 100%;
+            padding-top: 4px;
+            position: fixed;
+            color: white;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500;
+            font-size: 23px;
+            text-align: center;
+        }
+        #header a {
+            color: white;
+            font-weight: bold;
+        }
+        main{
+            position: absolute;
+        }
+
+        /* SERVIÇOS (IMAGENS)*/
+        .servicos {
+            width: 100%;
+            padding: 7% 2%;
+            position: relative;
+            display: inline-flex;
+            border-radius: 5px;
+        }
+        .servico {
+            width: 35%;
+            background-color: whitesmoke;
+            border-radius: 5px;
+            margin-left: 1%;
+            position: relative;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        } 
+        .servico:hover{
+            border-radius: 0px;
+            cursor: pointer;
+        }        
+        .container {
+            position: relative;
+            width: 100%;
+            height: auto;
+        }
+        .image {
+            width: 100%;
+            height: 110%;
+            border-radius: 5px;
+            display: block; 
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgb(255,140,0);
+           
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .8s ease;
+        }
+        .container:hover .overlay {
+            width: 100%;
+            height: 100%;
+        }
+        .text {
+            white-space: nowrap;            
+            position: absolute;
+            overflow:hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        .inner {
+            padding: 7%;
+        }
+        .inner a{
+            color: black;
+        }
+        .inner h4 {
+            color: black;
+            margin-top: 2%;
+        }
+        .inner p{
+            margin-top: 6%;
+            color: black;
+            line-height: 1.5em;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <section>
+            <div id="header">
+                <i class="fa fa-exclamation-triangle"></i> Caution: Files from unauthorized source. <a href="">More</a>
+            </div>    
+        </section>
+    </header>
+    <main class="servicos">
+        <div class="servico">
+            <div class="container">
+                <a href="#"><img src="files/zacksnyder.jpg" class="image"></a> 
+                <div class="overlay">
+                    <div class="image2"><img src="files/wonderwoman.jpeg" alt="" class="image"></div>
+                </div>
+            </div>                       
+            <div class="inner">
+                <a href="">Wonder Woman</a>
+                <h4></h4>
+                <p></p>
+            </div>
+        </div>
+        <div class="servico">
+            <div class="container">
+                <a href="#"><img src="files/zacksnyder.jpg" class="image"></a> 
+                <div class="overlay">
+                    <div class="image2"><img src="files/cyborg.jpg" alt="" class="image"></div>
+                </div>
+            </div>                       
+            <div class="inner">
+                <a href="">Cyborg</a>
+                <h4></h4>
+                
+            </div>
+        </div>
+        <div class="servico">
+            <div class="container">
+                <a href="#"><img src="files/zacksnyder.jpg" class="image"></a> 
+                <div class="overlay">
+                    <div class="image2"><img src="files/flash.jpeg" alt="" class="image"></div>
+                </div>
+            </div>            
+            <div class="inner">
+                <a href="">Flash</a>
+                <h4></h4>
+                
+            </div>
+        </div>
+        <div class="servico">
+            <div class="container">
+                <a href="#"><img src="files/zacksnyder.jpg" class="image"></a> 
+                <div class="overlay">
+                    <div class="image2"><img src="files/aquaman.jpg" alt="" class="image"></div>
+                </div>
+            </div>    
+            <div class="inner">
+                <a href="">Aquaman</a>
+                <h4></h4>                
+            </div>
+        </div>
+    </main>
+</body>
+</html>
