@@ -4,9 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
     <title>Projeto Liga da Justiça Snyder Cut</title>
+    <script src='https://kit.fontawesome.com/a076d05399.js' crossorigin='anonymous'></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/magnific-popup.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/magnific-popup.js/1.1.0/jquery.magnific-popup.js"></script>
     <style>
         @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
 
@@ -79,13 +83,12 @@
             overflow: hidden;
             width: 100%;
             padding: 4px;
-            position: fixed;
+            position: relative;
             color: white;
             font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
             font-weight: 500;
             font-size: 23px;
             text-align: center;
-            margin-bottom: 20%;
         }
         .topnav a {
             color: white;
@@ -93,9 +96,6 @@
         }
 
         /* CARDS (IMAGENS)*/
-        main {
-            
-        }
         .column {
             background-color: whitesmoke;
             border-radius: 5px;
@@ -109,22 +109,23 @@
             position: relative;
             width: 100%;
             height: auto;
+            padding: 0px;
         }
         .image {
             width: 100%;
-            height: 100%;
-            border-radius: 5px;
+            height: 100%;      
         }
         .overlay {
             position: absolute;
             bottom: 0;
             left: 0;
             right: 0;
-            background-color: rgb(255,140,0);           
+            background-color: rgba(255, 140, 0, 0.774);           
             overflow: hidden;
             width: 0;
             height: 100%;
             transition: .8s ease;
+            border-radius: 5px;
         }
         .container:hover .overlay {
             width: 100%;
@@ -164,27 +165,30 @@
             font-size: 18px;
             font-weight: bold;
             display: inline-block;
+        }        
+        .video{
+            color: white;
         }
         .button{
             width: 100%;
-            border-radius: 5px;
-            font-size: 18px;
-            color: white;
-            text-align: center;
-            padding: 3%;
-            margin-top: 10%;
+            padding: 5%;
+            display: inline-block;     
+            font-family: tahoma;
             font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 50px;         
+            margin-top: 10%;
             cursor: pointer;
-            background-color: rgb(255,140,0);
-            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            background-color: rgb(255, 140, 0);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);                        
         }
         .button:hover{
-            background-color: rgb(245, 245, 245);
-            color: black;
-            transition: .4s ease;
+            background-color: rgba(255, 255, 255, 0.781);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all .5s ease;
+            color: rgb(255, 140, 0);;
         }
-       
-        
         .footer{
             display: none;
             background-color: rgb(255,140,0);
@@ -210,11 +214,7 @@
             </section>
         </header>
     </div>
-    
-
-
     <main>
-
         <div class="col-3 col-s-12">
             <div class="column">
                 <div class="container">
@@ -235,9 +235,16 @@
                         <h4>06/24/15</h4>
                         <h4>06/24/15</h4>
                     </div>  
-                    <div class="button">
-                        CLIQUE
-                    </div>   
+                    <div class="video">
+                        <a href="#videostory1" class="button more" id="videolink1"> 
+                            Watch Video <i class="fa fa-play-circle" aria-hidden="true"> &nbsp;</i>
+                        </a>              
+                        <div id="videostory1" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+                            <iframe width="100%" height="480" src="https://www.youtube.com/embed/dlJtYiubyYw" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>                         
+                        </div>
+                    </div> 
                 </div>
             </div>
         </div>
@@ -262,9 +269,16 @@
                         <h4>06/24/15</h4>
                         <h4>06/24/15</h4>
                     </div>  
-                    <div class="button">
-                        CLIQUE
-                    </div>           
+                    <div class="video">
+                        <a href="#videostory2" class="button more" id="videolink2"> 
+                            Watch Video <i class="fa fa-play-circle" aria-hidden="true"> &nbsp;</i>
+                        </a>              
+                        <div id="videostory2" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+                            <iframe width="100%" height="480" src="https://www.youtube.com/embed/lApvRmjF-08" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>                       
+                        </div>
+                    </div>        
                 </div>
             </div>
         </div>
@@ -289,9 +303,16 @@
                         <h4>06/24/15</h4>
                         <h4>06/24/15</h4>
                     </div>  
-                    <div class="button">
-                        CLIQUE
-                    </div>   
+                    <div class="video">
+                        <a href="#videostory3" class="button more" id="videolink3"> 
+                            Watch Video <i class="fa fa-play-circle" aria-hidden="true"> &nbsp;</i>
+                        </a>              
+                        <div id="videostory3" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+                            <iframe width="100%" height="480" src="https://www.youtube.com/embed/3dOAcWZFy3A" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                             allowfullscreen></iframe>                        
+                        </div>
+                    </div> 
                     
                 </div>
             </div>
@@ -319,8 +340,15 @@
                         <h4>06/24/15</h4>
                         <h4>06/24/15</h4>
                     </div>  
-                    <div class="button">
-                        CLIQUE
+                    <div class="video">
+                        <a href="#videostory4" class="button more" id="videolink4"> 
+                            Watch Video <i class="fa fa-play-circle" aria-hidden="true"> &nbsp;</i>
+                        </a>              
+                        <div id="videostory4" class="mfp-hide" style="max-width: 75%; margin: 0 auto;">
+                            <iframe width="100%" height="480" src="https://www.youtube.com/embed/GoOzdi0AR5Y" title="YouTube video player" 
+                            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                            allowfullscreen></iframe>                         
+                        </div>
                     </div>          
                 </div>
             </div>
@@ -339,5 +367,23 @@
             </div>
         </footer>
     </div>
+    <script>
+        $('#videolink1').magnificPopup({
+            type:'inline',
+            midClick:true
+        })
+        $('#videolink2').magnificPopup({
+            type:'inline',
+            midClick:true
+        })
+        $('#videolink3').magnificPopup({
+            type:'inline',
+            midClick:true
+        })
+        $('#videolink4').magnificPopup({
+            type:'inline',
+            midClick:true
+        })
+    </script>
 </body>
 </html>
