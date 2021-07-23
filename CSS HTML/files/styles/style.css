@@ -1,0 +1,178 @@
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
+        * { 
+            margin:0; 
+            padding:0; 
+            font-size: 100%; 
+            box-sizing: border-box;
+            font-family: 'Roboto', sans-serif;
+        } 
+        /*.row::after {
+            content: "";
+            clear: both;
+            display: block;
+        }
+        [class*="col-"] {
+            float: left;
+            padding: 10px;
+        } */
+        /* MEDIA TYPES screen
+        Para monitores ou dispositivos com telas coloridas e resoluções adequadas.
+        print
+        para impressoras*/
+       
+        html, body{
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+        /*CABEÇALHO */
+        header{
+            width: 100%;
+            background-color: rgb(255,140,0);
+            display: flex;
+            justify-content: space-around;
+            padding: 20px 0;
+            color: rgb(255, 255, 255);
+        }
+        .topnav{
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            font-weight: 500px;
+            font-size: 23px;
+            text-align: center;
+        }
+        .topnav a {
+            color: rgb(255, 255, 255);
+            font-weight: 800;
+            transition: .3s ease;
+        }
+        .topnav a:hover{
+            color: rgba(255, 255, 255, 0.74);
+        }
+
+        /* CARDS (IMAGENS)*/
+        /*.column {
+            background-color: whitesmoke;
+            border-radius: 5px;
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+        } */
+        .cards{
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+            background-color: rgb(126, 126, 184);
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            height: 600px;
+            margin-left: 32px;
+        }     
+        .cards section.cards:first-child{
+            margin-left: 0;
+        } 
+        .container {
+            position: relative;
+            width: 100%;
+            padding: 0;
+        }
+        .image {
+            width: 100%;
+            height: 100%;      
+        }
+        .overlay {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background-color: rgba(255, 140, 0, 0.774);           
+            overflow: hidden;
+            width: 0;
+            height: 100%;
+            transition: .8s ease;
+            border-radius: 5px;
+        }
+        .container:hover .overlay {
+            width: 100%;
+            height: 100%;
+        }
+        .text {
+            white-space: nowrap;            
+            position: absolute;
+            overflow:hidden;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            -ms-transform: translate(-50%, -50%);
+        }
+        .inner {
+            padding: 7%;
+            position: relative;
+        }
+        .inner a{
+            color: black;
+            text-decoration: none;
+            font-size: 20px;
+            font-weight: bold;
+            display: block;
+        }
+        .content {
+            width: 40%;
+            text-align: left;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+        }
+        .content2 {
+            width: 50%;
+            margin-top: 4%;
+            text-align: right;
+            font-size: 18px;
+            font-weight: bold;
+            display: inline-block;
+        }        
+        .video{
+            color: white;
+        }
+        .button{
+            width: 100%;
+            padding: 5%;
+            display: inline-block;     
+            font-family: tahoma;
+            font-weight: bold;
+            text-align: center;
+            text-transform: uppercase;
+            border-radius: 50px;         
+            margin-top: 10%;
+            cursor: pointer;
+            background-color: rgb(255, 140, 0);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);                        
+        }
+        .button:hover{
+            background-color: rgba(255, 255, 255, 0.781);
+            box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+            transition: all .5s ease;
+            color: rgb(255, 140, 0);
+        }
+    
+        /*RODAPÉ*/
+        .rodape {
+            width: 100%;
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            float: left;
+            padding: 3% 4%;
+            text-align: center;
+            background: linear-gradient(to right, rgba(43, 9, 99, 0.842), rgba(69, 26, 138, 0.842));
+        }
+        .social-icons a {
+            font-size: 1.5em;
+            color: rgba(245, 245, 245, 0.699);
+            margin-right: 3%;
+        }
+        .social-icons a:hover{
+            color: whitesmoke;
+        }
+        .rodape p{
+            color: rgba(245, 245, 245, 0.699);
+        }

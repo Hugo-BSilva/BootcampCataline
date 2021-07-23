@@ -1,0 +1,281 @@
+/* Deixar o site responsivo */
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+
+*{margin:0; padding:0; font-size: 100%; border:none; outline: none;
+ font-weight: 300; box-sizing: border-box; font-family: 'Roboto', sans-serif;} 
+
+body {background-color: whitesmoke;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+/*CONTAINERs*/
+.container {
+    width: 100%;
+    float: left;
+    padding: 3% 4%;
+    text-align: center;
+}
+
+.logo{
+    border-radius: 50px;
+    width: 56px;
+    height: 56px;
+    float: left;
+    background: url(../Site_Responsivo/img/icon.jpg) center center/56px no-repeat;
+}
+/*Configuração do MENU principal */
+.btn-menu{ /*Botão vermelho do menu */
+    width: 56px; /*Largura*/
+    height: 56px; /*Altura*/
+    float: right; /*Posição que ele vai ficar */
+    text-align: center;
+    color: white; /*Cor das listras */
+    border-radius: 56px; /*Deixando ele redondo */
+    cursor: pointer; /*Ao passar o mouse por cima, ele vira uma mão */
+    background: linear-gradient(to right, rgb(65,105,225), rgba(70, 131, 180, 0.87));
+}
+.menu { /*Configurações do menu */
+    display: none;
+    width: 100%; /*Permite que ele reduza e aumente conforme o tamanho da tela */
+    height: 100%; /*Permite que ele reduza ou aumente conforme o tamanho da tela */
+    /* Posição que ele vai aparecer */
+    position: fixed;
+    background-color: rgba(32, 31, 31, 0.747); top: 0; left: 0;
+}
+.btn-close{
+    font-size: 3em;
+    font-weight: bold;
+    color: whitesmoke;
+    float: right;
+    cursor: pointer;
+    margin-right: 5%;
+}
+.btn-close:hover{
+    color: rgb(65,105,225);
+}
+.menu ul{
+    width: 100%;
+    float: left;
+    text-align: center;
+    font-size: 2em;
+}
+.menu li{
+    padding: 1.5%;
+}
+.menu li a {
+    color: whitesmoke;
+    padding: 1.5% 3%;
+}
+.menu li a:hover{
+    background-color: whitesmoke;
+    font-weight: bold;
+    color: rgb(65,105,225);
+    border: 1px solid rgb(65,105,225);
+    border-radius: 50px;
+}
+
+/*BANNER*/
+.banner {
+    /*Fonte:https://www.wallpaperflare.com/search?wallpaper=technology*/
+    background: url(../Site_Responsivo/img/tecnologywallpaper.jpg) no-repeat fixed;
+}
+
+.title{width: 100%;
+}
+
+.title h2{
+    font-size: 2.5em; 
+    color: white; 
+    font-weight: 700;
+}
+
+.title h3{
+    font-size: 1.5em; 
+    color: white;
+}
+
+.buttons{
+    width: 100%; 
+    margin-top: 10%;
+}
+
+.buttons i {
+    float: right;
+}
+.btn {
+    width: 100%;
+    padding: 5%; 
+    border-style: none; 
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 1.5em;
+    text-align: left; 
+    border-radius: 8px;  
+    cursor: pointer;
+}
+.btn-cadastrar {
+    background-color: white; 
+    color: rgba(65,105,225);
+}
+
+.btn-cadastrar:hover{
+    background-color: rgba(65,105,225); 
+    color: white;
+}
+
+.btn-sobre {
+    background-color: rgb(65,105,225); 
+    color: white;
+    margin-top: 2%;
+}
+
+.btn-sobre:hover{
+    background-color: white;
+     color:rgb(65,105,225);
+}
+
+/* SERVIÇOS */
+.servico {
+    width: 100%;
+    background-color: rgba(255, 255, 255, 0.959);
+    text-align: left;
+    border-radius: 7px;
+    margin-bottom: 3%;
+}
+.servico img{
+    width: 100%;
+    border-radius: 7px 7px 0 0;
+}
+.inner {
+    padding: 7%;
+}
+.inner a{
+    font-size: 1.5em;
+    color: black;
+    font-weight: bold;
+}
+.inner h4 {
+    font-size: 1.2em;
+    color: black;
+    margin-top: 2%;
+}
+.inner p{
+    margin-top: 6%;
+    color: black;
+    line-height: 1.5em;
+}
+
+/* NEWSLETTER */
+.newsletter{
+    /*Fonte: https://www.wallpaperflare.com/search?wallpaper=technology*/
+    background: url(../Site_Responsivo/img/tecnologywallpaper.jpg) no-repeat fixed;
+}
+.newsletter h2{
+    font-size: 1.5em;
+    color: whitesmoke;
+    font-weight: 700;    
+}
+.newsletter h3{
+    color: whitesmoke;
+}
+.newsletter form{
+    margin-top: 4%;
+}
+.newsletter input{
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.719);
+    color: whitesmoke;
+    font-weight: bold;
+    border: 1px solid rgb(65,105,225);
+    padding: 5%;
+    border-radius: 10px;
+}
+.newsletter button{
+    width: 100%;
+    padding: 5%; 
+    background-color: rgb(65,105,225); 
+    color: whitesmoke;
+    font-family: Arial, Helvetica, sans-serif; 
+    font-weight: bold; 
+    font-size: 1.5em;
+    text-align: center; 
+    border-radius: 8px;
+    border: 1px solid whitesmoke;  
+    cursor: pointer;
+    margin-top: 10px;
+}
+.newsletter button:hover{
+    background-color: rgba(65, 105, 225, 0.712); 
+}
+
+/* RODAPÉ */
+.rodape {
+    
+    background: linear-gradient(to right, rgb(65,105,225), rgba(65, 106, 230, 0.822));
+}
+.social-icons a {
+    font-size: 1.5em;
+    color: rgba(245, 245, 245, 0.699);
+    margin-right: 3%;
+}
+.social-icons a:last-child{
+    margin-right: 0;
+}
+.social-icons a:hover{
+    color: white;
+}
+.copyright {
+    margin-top: 2%;
+}
+.rodape p{
+    color: rgba(245, 245, 245, 0.699);
+}
+
+/* MEDIA TYPES screen
+Para monitores ou dispositivos com telas coloridas e resoluções adequadas.
+print
+para impressoras*/
+
+/*=== MOBILE FIRST ===*/
+@media screen and (min-width: 480px){
+.btn{font-size: 2em;}
+.title h2{font-size: 2.5em; font-weight: 700;}
+.title h3{font-size: 1.5em;}
+}
+
+/*===SMALL DEVICES - TABLETS===*/
+@media screen and (min-width: 768px){
+.servico{width: 48%; float: left; margin-left: 2%;}
+.servico:nth-child(2){margin-right: 0;}
+.newsletter h2 {font-size: 2em;}
+.newsletter h3 {font-size: 1.5em;}
+.newsletter input{width: 70%; padding: 2%; float: left; margin-right: 1%;}
+.newsletter button{width: 28%; padding: 2%; float: right; margin-top: 0;}
+}
+
+/*===MEDIUM DEVICES - TABLETS===*/
+@media screen and (min-width: 960px){
+.title {width: 70%; float: left; text-align: left;}
+.title h2 {font-size: 3em;}
+.title h3 {font-size: 2em;}
+.buttons{width: 30%; float: right; margin-top: 0;}
+.servico{width: 29%;}
+.servico:nth-child(2){margin-right: 0;}
+.servico:nth-child(3){margin-right: 0;}
+.newsletter input{width: 60%; float: none;}
+.newsletter button{width: 20%; float: none;}
+}
+
+/*===LARGE DEVICES - WIDE SCREENS===*/
+@media screen and (min-width: 1280px){
+.btn-menu{display: none;}
+.btn-close{display: none;}
+.menu{width: auto; height: 56px; line-height: 56px; float: right; 
+background-color: whitesmoke; display: block !important; position: static;}
+.menu li{padding: 0; float: left;}
+.menu li a {font-size: 1em; padding: 15px; color: rgba(65, 105, 225, 0.781); font-weight: bold; 
+transition:all ease-in 0.5s;}
+.menu li a:hover{border: none; color: rgb(65,105,225); border-bottom: 2px solid;}
+.servico:nth-child(3){margin-right: 0;}
+}

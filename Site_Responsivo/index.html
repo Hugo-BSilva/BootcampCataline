@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Site para divulgação, + responsividade"> 
+        <meta name="keywords" content="Site, Responsivo, divulgação">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Hugo Barbosa da Silva">
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+        <link rel="icon" href="img/icon.jpg">
+        <title>Site Divulgação</title>
+    </head>
+<body>
+    <header class="cabecalho container">
+        <a href="index.html"><h1 class="logo"></h1></a>                  
+        <button class="btn-menu"><i class="fa fa-bars fa-lg"></i></button>
+            <nav class="menu">
+                <a class="btn-close">x</a>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Cliente</a></li>
+                    <li><a href="#">Serviços</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Quem Somos</a></li>
+                    <li><a href="#">Contato</a></li>
+                </ul>
+            </nav>
+    </header>
+    <div class="banner container">
+        <div class="title">
+            <h2>Primeiro site Responsivo !</h2>
+            <h3>Criado e editado por Hugo Barbosa da Silva.</h3>
+        </div>
+        <div class="buttons">
+        <button class="btn btn-cadastrar"> Cadastrar <i class="fa fa-arrow-circle-right"></i> </button><br>
+        <button class="btn btn-sobre"> Sobre <i class="fa fa-question-circle"></i></button>
+        </div>
+    </div>
+
+    <!--Cards-->
+    <main class="servicos container">
+        <article class="servico">
+            <a href="#"><img src="img/php.jpg" alt="Linguagem de programação PHP"></a>
+            <div class="inner">
+                <a href="">Linguagem de Programação PHP</a>
+                <h4>Trabalho utlizando o PHP, juntamente com a programação orientada a objetos</h4>
+                <p>Desenvolvimento Rápido de Apps Web, Formulário, 
+                    Relatório, Gráfico, PDF. Confira no Site. 
+                    Eficiente Ferramenta de Desenvolvimento Web em 
+                    PHP Baseada em Banco de Dados do Mercado. 
+                    Desenvolvimento Rápido. Interface Intuitiva. 
+                    Gerador de Sistemas WEB.</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img/codigo.jpg" alt="A arte de Hackear"></a>
+            <div class="inner">
+                <a href="#">A arte de Hackear</a>
+                <h4>Trabalho utlizando o PHP, juntamente com a programação orientada a objetos</h4>
+                <p>Desenvolvimento Rápido de Apps Web, Formulário, 
+                    Relatório, Gráfico, PDF. Confira no Site. 
+                    Eficiente Ferramenta de Desenvolvimento Web em 
+                    PHP Baseada em Banco de Dados do Mercado. 
+                    Desenvolvimento Rápido. Interface Intuitiva. 
+                    Gerador de Sistemas WEB.</p>
+            </div>
+        </article>
+        <article class="servico">
+            <a href="#"><img src="img/dev.jpg" alt="Analista de Sistemas"></a>
+            <div class="inner">
+                <a href="#">Analista de Sistemas</a>
+                <h4>Trabalho utlizando o PHP, juntamente com a programação orientada a objetos</h4>
+                <p>Desenvolvimento Rápido de Apps Web, Formulário, 
+                    Relatório, Gráfico, PDF. Confira no Site. 
+                    Eficiente Ferramenta de Desenvolvimento Web em 
+                    PHP Baseada em Banco de Dados do Mercado. 
+                    Desenvolvimento Rápido. Interface Intuitiva. 
+                    Gerador de Sistemas WEB.</p>
+            </div>
+        </article>
+    </main>
+    <!-- NEWSLETTER-->
+    <section class="newsletter container">
+        <h2>Inscreva-se agora!</h2>
+        <h3>Receba novidades, dicas e muito mais !</h3>
+        <form action="">
+            <input type="email" name="email" id="email" placeholder="Seu email">
+            <button>Cadastrar</button>
+        </form>
+    </section>
+    <!-- RODAPÉ -->
+    <footer class="rodape container">
+        <div class="social-icons">
+            <a href="#"><i class="fa fa-facebook"></i></a> <!-- Essas classes "fa fa-REDE SOCIAL" só são reconhecidas pois temos o JQUERY INSTALADO-->
+            <a href="#"><i class="fa fa-twitter"></i></a>
+            <a href="#"><i class="fa fa-github"></i></a>
+            <a href="#"><i class="fa fa-instagram"></i></a>
+            <a href="#"><i class="fa fa-whatsapp"></i></a>
+        </div>
+        <p class="copyright">
+            Copyright © HugoBSilva 1999. Todos os direitos reservados.
+        </p>
+    </footer>
+    <!-- JQUERY-->
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+    </script>
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>
