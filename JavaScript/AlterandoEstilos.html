@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alterando Estilos</title>
+    <style>
+        *{  margin:0; padding:0; border:none; outline: none;
+            font-weight: 300; box-sizing: border-box; 
+            font-family: 'Roboto', sans-serif;} 
+        body{
+            background-image: linear-gradient(rgb(57, 57, 160), rgb(8, 9, 20));
+            height: 100vh;
+            color: white;
+        }
+        div#app{
+            width: 100%;
+        }
+        div#app1{
+            width: 256px;
+            height: 256px;
+            background-color: tomato;
+            float: right;
+            border-radius: 50%;
+            margin: 2%;
+        }
+        #app1 p {
+            text-align: center;
+            margin-top: 115px;
+        }
+        form{
+            width: 80%;
+            margin: 10%;
+            border-radius: 8px;
+            padding: 2px;
+        }
+        input{
+            border-radius: 8px;
+            padding: 2% 5%;
+        }
+        button{
+            color: white;
+            background-color: blue;
+            border: none;
+            border-radius: 8px;
+            padding: 2% 5%;
+        }
+        button:hover{
+            background-color: white;
+            color: blue;
+            border: none;
+            transition: 0.5s;
+        }
+        #app a{
+            color: white;
+            text-align: center;
+            display: block;
+            padding: 2%;
+        }
+        @media screen and (max-width: 480px){
+            form{width: 80%;}
+            input{padding: 4% 8%;}
+            button{padding: 4% 8%;}
+        } 
+    </style>
+</head>
+<body>
+    <div id="app">
+        <form action="">
+        <h1>Cadastro</h1>
+            <input type="text" name="idade" class="idade" placeholder="Idade" id="idade">
+            <button>Enviar</button>
+            <a href="#Sobre">Sobre</a>
+        </form>
+    </div>
+    <div id="app1">
+        <p>Olá Hugo</p>
+    </div>
+    <script src="AlterandoEstilos.js"></script>
+</body>
+</html>

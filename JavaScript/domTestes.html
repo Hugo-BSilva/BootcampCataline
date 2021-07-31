@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>domTestes</title>
+    <style>
+        body{
+            background-image: linear-gradient(rgb(57, 57, 160), rgb(8, 9, 20));
+            height: 100vh;
+            font-family: sans-serif;
+            color: white;
+        }
+        input{
+            border: none;
+            border-radius: 5px;
+            padding: 2%;
+        }
+        button{
+            margin: 2%;
+            background-color: #0000ff;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            padding: 2% 5%;
+        }
+        button:hover{
+            background-color: white;
+            color: blue;
+            border: none;
+            border-radius: 5px;
+            padding: 2% 5%;
+            transition: 0.5s;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <h1>Cadastro</h1>
+        <input type="text" name="idade" class="idade" placeholder="Idade" id="idade">
+        <input type="text" id="outro" placeholder="Digite outra coisa">
+        <button>Enviar</button>
+    </div>
+    <script src="domTestes.js"></script>
+</body>
+</html>
