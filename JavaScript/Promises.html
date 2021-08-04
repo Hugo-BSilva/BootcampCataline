@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assíncrono VS Síncrono</title>
+    <style>
+        *{  margin:0; padding:0; border:none; outline: none;
+            font-weight: 300; box-sizing: border-box; 
+            font-family: 'Roboto', sans-serif;} 
+        body{
+            background-image: linear-gradient(rgb(57, 57, 160), rgb(8, 9, 20));
+            height: 100vh;
+            color: white;
+            text-align: center;
+        }
+        div#app{
+            width: 100%;
+        }
+        #app p{
+            margin: 5%;
+        }
+        #app a{
+            color: white;
+            display: block;
+            padding: 2%;
+        }
+        input#texto{
+            text-align: center;
+            border-radius: 8px;
+            padding: 5px;
+        }
+        button{
+            text-align: center;
+            border-radius: 8px;
+            padding: 5px 15px;
+            font-weight: bold;
+            color: whitesmoke;
+            background-color: royalblue;
+            transition: all 0.3s;
+        }
+        button:hover{
+            background-color: whitesmoke;
+            color: royalblue;
+            border: none;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+    <div id="app">
+        <p>Hello Hugo</p>
+        Digite sua idade: 
+        <input type="text" name="" id="texto">
+        <button>Enviar</button>
+    </div>
+    <script src="Promises.js"></script>
+</body>
+</html>
+        
