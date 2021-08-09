@@ -124,3 +124,41 @@ const showFullName = ({firstName, secondName})=>{
     console.log(`${firstName} ${secondName}`)
 }
 showFullName(person)
+
+
+/* === OPERADORES REST/SPREAD === */
+const n = [1, 2, 3, 4, 5]
+const personagem = {
+    namee:'Hugo',
+    age: 21,
+    height: 1.63,
+    company: 'Recovery',
+}
+
+//Trás todo o resto do vetor 
+//const [first, second, ...rest] = n
+const {namee, ...rest} = personagem
+console.log(rest)
+
+
+//Função utilizando REST
+const somase = (...params) => {
+    return params.reduce((total, next) => total + next)
+}
+
+console.log(somase(5,5,10,10))
+
+
+//SPREAD, pega de um lugar e coloca em outro
+const num1 = [1,2,3,4,5]
+const num2 = [6,7,8,9,10]
+
+const numbersTog = [...num1, ...num2]
+console.log(numbersTog)
+
+const personagem1 = {
+    ...personagem,
+    namee: 'João',
+}
+
+console.log(personagem1)
