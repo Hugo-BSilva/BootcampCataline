@@ -1,3 +1,4 @@
+/*==========================================================================*/ 
 /* === OPERAÇÕES COM ARRAYS ==== */
 const numbers = [1,2,3,4,5]
 
@@ -63,7 +64,9 @@ console.log(hasFusca)
 const anything = () => console.log('hello world')
 
 anything()
+/*==========================================================================*/ 
 
+/*==========================================================================*/ 
 /* === PARÂMETRO PADRÃO === */
 //Caso não passe um nome, o padrão é Fulano
 // function sayHello(name = 'Fulano') {
@@ -93,8 +96,9 @@ const product = {
     inStock: true
 }
 console.log(product)
+/*==========================================================================*/ 
 
-
+/*==========================================================================*/ 
 /* === DESESTRUTURAÇÃO === */
 const fruits = ['laranja', 'morango', 'maçã']
 
@@ -124,8 +128,9 @@ const showFullName = ({firstName, secondName})=>{
     console.log(`${firstName} ${secondName}`)
 }
 showFullName(person)
+/*==========================================================================*/ 
 
-
+/*==========================================================================*/ 
 /* === OPERADORES REST/SPREAD === */
 const n = [1, 2, 3, 4, 5]
 const personagem = {
@@ -162,3 +167,116 @@ const personagem1 = {
 }
 
 console.log(personagem1)
+/*==========================================================================*/ 
+
+/*==========================================================================*/ 
+/* === CLASSES - Função Construtora === */
+//this faz referência aos elementos da própria função
+function Cars(brand, price) {
+    this.brand = brand
+    this.price = price
+}
+
+class Car{
+    constructor(brand,price){
+        this.brand=brand
+        this.price = price
+    }
+
+    run(){
+        console.log('correr')
+    }
+}
+
+const hb20 = new Car('hyundai', 120)
+const fusca = new Car('wolks', 80)
+
+console.log(fusca)
+console.log(hb20)
+fusca.run()
+/*==========================================================================*/ 
+
+/*==========================================================================*/ 
+/* === CLASSES - GET & SET === */
+class Persona{
+    constructor(name,secondName){
+        this._name = name
+        this.secondName = secondName
+    }
+
+    get name(){
+        return this._name
+    }
+    set name(name){
+        this._name = name
+    }
+
+    get fullName(){
+        //return `${this._name} ${this.secondName}`
+        return Persona.joinNames(this._name, this.secondName)
+    }
+
+    static joinNames(name, secondName){
+        return `${name} ${secondName}`
+    }
+}
+
+const p = new Persona('Hugo Barbosa', 'da Silva')
+p.name = 'João'
+console.log(p.name)
+console.log(p.fullName)
+/*==========================================================================*/ 
+
+/*==========================================================================*/ 
+/* === CLASSES - Métodos Estáticos === */
+class Calculator{
+    static somar(a,b){
+        return a + b
+    }
+}
+
+console.log(Calculator.somar(10,5))
+/*==========================================================================*/ 
+
+/*==========================================================================*/ 
+/* === CLASSES - HERANÇA === */
+class Veiculo{
+    constructor(rodas){
+        this.rodas = rodas
+    }
+
+    acelerar(){
+        console.log('Acelerou')
+    }
+}
+
+//A classe moto está herdando a classe veiculo
+class Moto extends Veiculo{
+    constructor(rodas, capacete){
+        super(rodas)
+        this.capacete = capacete
+    }
+    empinar(){
+        console.log(`Empinou com ${this.rodas} rodas`)
+    }
+
+    //Polimorfismo
+    acelerar(){
+        super.acelerar()
+        console.log('Acelerou Muito')
+    }
+
+    taUsandoCapacete(){
+        if (this.capacete == true) {
+            console.log(`Capacete está sendo usando = ${this.capacete}`)
+        } else {
+            console.log(`Capacete não está sendo usado = ${this.capacete}`)
+        }
+    }
+}
+
+const bross = new Moto(2, true)
+
+bross.acelerar()
+bross.empinar()
+bross.taUsandoCapacete()
