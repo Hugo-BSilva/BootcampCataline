@@ -98,3 +98,35 @@ var product = {
 };
 console.log(product);
 /* === DESESTRUTURAÇÃO === */
+
+var fruits = ['laranja', 'morango', 'maçã']; // const a = fruits[0]
+// const b = fruits[1]
+//console.log(a,b)
+
+var a = fruits[0],
+    b = fruits[1];
+console.log(a, b);
+var person = {
+  firstName: 'Hugo',
+  secondName: 'Silva',
+  age: 21,
+  adress: {
+    city: 'Suzano',
+    region: 'SP'
+  }
+}; // const firstname = person.firstName
+// const secondName = person.secondName
+// const city = person.adress.city
+
+var firstName = person.firstName,
+    secondName = person.secondName,
+    city = person.adress.city;
+console.log(person);
+
+var showFullName = function showFullName(_ref) {
+  var firstName = _ref.firstName,
+      secondName = _ref.secondName;
+  console.log("".concat(firstName, " ").concat(secondName));
+};
+
+showFullName(person);

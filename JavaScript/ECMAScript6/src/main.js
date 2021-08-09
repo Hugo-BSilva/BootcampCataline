@@ -96,3 +96,31 @@ console.log(product)
 
 
 /* === DESESTRUTURAÇÃO === */
+const fruits = ['laranja', 'morango', 'maçã']
+
+// const a = fruits[0]
+// const b = fruits[1]
+//console.log(a,b)
+const [a, b] = fruits
+console.log(a,b)
+
+const person = {
+    firstName: 'Hugo',
+    secondName: 'Silva',
+    age: 21,
+    adress:{
+        city: 'Suzano',
+        region: 'SP',
+    },
+}
+
+// const firstname = person.firstName
+// const secondName = person.secondName
+// const city = person.adress.city
+const {firstName, secondName, adress:{city}} = person
+console.log(person)
+
+const showFullName = ({firstName, secondName})=>{
+    console.log(`${firstName} ${secondName}`)
+}
+showFullName(person)
