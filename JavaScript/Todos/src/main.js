@@ -6,45 +6,57 @@ const apiTodos = new Todos()
 
 //Recebe um argumento que e um objeto de opcoes
 const app = createApp({
+
     //Dados da aplicacao que serao renderizados em tela
     data() {
       return {
-        todos: [ ],
+        todos: [],
         form: {
-          text: ' ',
-          done: false
+          text: '',
+          done: false,
         }
       }
     },
+
     created(){
-      this.fetchTodos()
+      this.indexTodos()
     },
-    methods: {
-      async fetchTodos(){
+
+    methods: {   
+      async indexTodos(){
         this.todos = await apiTodos.index()
-        console.log(this.todos)
-      }
+      },  
+
+      async createTodo(){
+        const data = await apiTodos.store(this.form)
+        this.todos.push(data)
+
+        this.form.text = ''
+        this.form.done = false
+      },
+
+      async toggleTodoStatus(todo){
+        //Despeja todos os objetos em todo e atualiza colocando o valor inverso que estava
+        const data = await apiTodos.update({
+          ... todo,
+          done: !todo.done
+          //Mesma coisa: done: todo.done == true ? false : true
+        })
+
+        const index = this.todos.findIndex((todo) => todo.id == data.id)
+        this.todos[index] = data
+      },
+
+      async destroyTodo(id){
+        await apiTodos.destroy({ id })
+        
+        const index = this.todos.findIndex((todo) => todo.id == id)
+        this.todos.splice(index, 1)
+      },
+      
     },
-    async createTodo(){
-      const data = await apiTodos.store(this.form)
-      this.todos.push(data)
-    },
+    
 })
 
 //Pega o APP vue e monta ele na tag #app
 app.mount('#app')
-
-// async function exec(){   
-//     const response = await apiTodos.index()
-//     // const update = await todos.update({
-//     //     id: 5,
-//     //     text: 'Sair com namorada',
-//     //     done: true})
-//     //const create = await todos.create({text:'Cortar cabelo', done: true})
-//     //const del = await todos.del({id:0})
-//     //console.log(del)
-//     //console.log(create)
-//     console.log(response)
-// }
-
-// exec()
