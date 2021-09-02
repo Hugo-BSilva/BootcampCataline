@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="robots" content="index, follow">
+        <meta name="author" content="Hugo Barbosa da Silva">
+        <link rel="stylesheet" href="../src/css/style.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+        <link rel="icon" href="img/icon.jpg">
+    <title>TESTE SITE</title>
+</head>
+<body>
+    <header>
+            
+    </header>
+    
+    <main>
+        
+        <section>
+            <div class="conteudo">
+                <h1>Seja bem vindo !</h1>
+                <p>O objetivo dessa página é centralizar minhas informações de contato</p>
+                <div id="redes">
+                    <div class="social-icons">
+                        <!-- Essas classes "fa fa-REDE SOCIAL" só são reconhecidas pois temos o JQUERY INSTALADO-->                
+                        <a href="#"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/a.r_produtosimportados/" target="blank"><i class="fa fa-instagram"></i></a>
+                        <a href="#"><i class="fa fa-whatsapp"></i></a>
+                    </div>  
+                </div> 
+            </div>
+            <div class="image">
+                <img src="../src/img/watch.png" alt="" srcset=""> 
+                <button>SAIBA MAIS</button>
+            </div>  
+                 
+        </section>
+        <section>
+                                  
+        </section>        
+    </main>
+    <footer>
+        <div id="rodape">
+            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320"><path fill="#A55FEB" fill-opacity="1" d="M0,96L48,90.7C96,85,192,75,288,106.7C384,139,480,213,576,229.3C672,245,768,203,864,170.7C960,139,1056,117,1152,101.3C1248,85,1344,75,1392,69.3L1440,64L1440,320L1392,320C1344,320,1248,320,1152,320C1056,320,960,320,864,320C768,320,672,320,576,320C480,320,384,320,288,320C192,320,96,320,48,320L0,320Z"></path></svg>
+        </div>        
+    </footer>
+    <script
+        src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha256-4+XzXVhsDmqanXGHaHvgh1gMQKX40OUvDEBTu8JcmNs="
+        crossorigin="anonymous">
+    </script>   
+    <script>
+        $(".btn-menu").click(function(){
+            $(".menu").show();
+        });
+        $(".btn-close").click(function(){
+            $(".menu").hide();
+        });
+    </script>
+</body>
+</html>

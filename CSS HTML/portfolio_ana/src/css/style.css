@@ -1,0 +1,103 @@
+/* SUBMIT YOUR DESIGN
+https://interfacely.net/submit
+-
+Fonts: Mazzard
+Colors: 1A1B1F, 212329, 313237, 3A3C47, 3482E7
+background-color: #1A1B1F;
+Colors: 1D3D56, 1D5668, 007397, 74B6E4, C6DBEE, FED51C, CC3E53
+F25AC9, A55FEB, 1A1A1A, FFFFFF
+font-family: 'Roboto', sans-serif;
+*/
+@import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
+@import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap);
+
+*{margin:0; padding:0; font-size: 100%; border:none; outline: none;
+    font-weight: 350px; box-sizing: border-box; font-family: 'Roboto', sans-serif;
+    color: whitesmoke; transition: all ease 0.5s;} 
+body{background: #1A1A1A;}
+a {text-decoration: none;}
+ul {list-style: none;}
+img {max-width: 100%;}
+
+main{
+    width: 100%;
+    height: auto;
+}
+section{
+    width: 100%;
+}
+.conteudo{
+    width: 60%;
+    margin-top: 10%;
+    color: #FFFFFF;
+    position: relative;
+    float: left;
+    text-align: center;
+}
+    .conteudo h1{
+        font-weight: 900;
+        font-family: 'Dancing Script', cursive;
+        font-size: 4rem;
+        color: #FFFFFF; text-shadow: #A55FEB 0.1em 2px 0.2em
+    }
+    .conteudo p{
+        margin-top: 1%;
+        font-weight: 550;
+        color:#FFFFFF;
+    }
+        #redes{
+            padding: 5%;
+            float: center;
+            align-items: center;
+            position:relative;
+            cursor: pointer;
+        }
+        .social-icons a .fa{
+            padding: 5%;
+            display: inline;
+            font-size: 2em;
+            cursor: pointer;
+        }
+        .social-icons a .fa:hover{
+            color:#A55FEB;
+            cursor: pointer;
+        }
+.image{
+    width: 40%;
+    height: auto;
+    margin-top: 5%;
+    position: relative;
+    float: right;
+    padding: 5%;
+    align-items: center;
+}
+.image button{
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    border-radius: 50px;
+    font-weight: 800;
+    background-image: linear-gradient(to right, #F25AC9, #A55FEB);
+}
+.image button:hover{
+    width: 100%;
+    padding: 5%;
+    cursor: pointer;
+    border: solid 0.1px #FFFFFF;
+    border-radius: 50px;
+    background-image: linear-gradient(to right, #A55FEB, #F25AC9);
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    max-height: 100%;
+    text-align: center;
+    line-height: 100%;
+}
+
+
+
+
+
