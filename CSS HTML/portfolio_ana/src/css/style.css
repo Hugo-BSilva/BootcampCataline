@@ -11,93 +11,183 @@ font-family: 'Roboto', sans-serif;
 @import url(https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap);
 @import url(https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap);
 
-*{margin:0; padding:0; font-size: 100%; border:none; outline: none;
-    font-weight: 350px; box-sizing: border-box; font-family: 'Roboto', sans-serif;
-    color: whitesmoke; transition: all ease 0.5s;} 
-body{background: #1A1A1A;}
-a {text-decoration: none;}
-ul {list-style: none;}
-img {max-width: 100%;}
+*{
+    padding:0; 
+    margin:0;    
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+} 
+body{
+    width: 100%;
+    height: 100vh; 
+    background: #1A1A1A;
+}
 
-main{
+
+header{
     width: 100%;
-    height: auto;
+    height: 70px;
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    box-shadow: 0px 5px 20px black;   
+    background-image: linear-gradient(to right, #FFFFFF, #A55FEB);
+    justify-content: space-between; 
 }
-section{
+.menu{
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.menu li a{
+    color: white;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+    padding: 10px;
+    transition: all ease-in-out 0.8s;
+    border-radius: 10px;
+}
+.menu li a:hover{
+    color: #F25AC9;
+    background-color: #fffffff3;
+    text-decoration: none;
+    display: block;
+    margin-left: 10px;
+}
+.logo{
+    width: 45px;
+    height: 45px;
+    border-radius: 10px;
+    background-color: white;
+}
+
+
+/*SECTION PRINCIPAL*/
+#principal{
     width: 100%;
-}
-.conteudo{
-    width: 60%;
-    margin-top: 10%;
+    height: 90vh;
     color: #FFFFFF;
-    position: relative;
-    float: left;
     text-align: center;
-}
-    .conteudo h1{
-        font-weight: 900;
-        font-family: 'Dancing Script', cursive;
-        font-size: 4rem;
-        color: #FFFFFF; text-shadow: #A55FEB 0.1em 2px 0.2em
-    }
-    .conteudo p{
-        margin-top: 1%;
-        font-weight: 550;
-        color:#FFFFFF;
-    }
-        #redes{
-            padding: 5%;
-            float: center;
-            align-items: center;
-            position:relative;
-            cursor: pointer;
-        }
-        .social-icons a .fa{
-            padding: 5%;
-            display: inline;
-            font-size: 2em;
-            cursor: pointer;
-        }
-        .social-icons a .fa:hover{
-            color:#A55FEB;
-            cursor: pointer;
-        }
-.image{
-    width: 40%;
-    height: auto;
-    margin-top: 5%;
-    position: relative;
-    float: right;
-    padding: 5%;
+    flex-wrap: wrap;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
-.image button{
-    width: 100%;
-    margin-top: 5%;
-    padding: 5%;
-    border-radius: 50px;
-    font-weight: 800;
-    background-image: linear-gradient(to right, #F25AC9, #A55FEB);
+.conteudo h1{
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    font-size: 8rem;
+    color: #FFFFFF; text-shadow: #A55FEB 0.1em 2px 0.2em;
+    display: flex;
+    flex-wrap: wrap;
 }
-.image button:hover{
-    width: 100%;
+.conteudo p{
+    margin-top: 5%;
+    font-weight: 300;
+    color:#FFFFFF;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0% 10% 0% 10%;
+}
+button{
+    width: 80%;
+    padding: 5%;
+    margin-top: 10%;
+    border: none;
+    border-radius: 50px;
+    font-weight: 300;
+    color: #FFFFFF;
+    background: linear-gradient(to right, #F25AC9, #A55FEB);
+    position: relative; 
+    transition: all ease-in-out 0.8s;
+}
+button:hover{
+    width: 80%;
     padding: 5%;
     cursor: pointer;
-    border: solid 0.1px #FFFFFF;
     border-radius: 50px;
-    background-image: linear-gradient(to right, #A55FEB, #F25AC9);
+    color: #F25AC9;
+    background: #fffffff3;
 }
 
+/*SECTION PRODUTOS*/
+#produtos h1{
+    font-weight: 900;
+    font-family: 'Dancing Script', cursive;
+    font-size: 5rem;
+    color: #FFFFFF; text-shadow: #A55FEB 0.1em 2px 0.2em;
+    text-align: center;
+    margin-top: 20px;
+}
+.container{
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container div{
+/* Ajusta os flex itens dentro do container maior */
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-grow: 1 1 300px;
+    margin: 10px;
+}
+img{
+    display: flex;
+    width: 100%;
+    border-radius: 10px;
+}
+@media screen and (min-width: 480px){
+    .container{
+        max-width: 1200px;
+        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .container div{
+    /* Ajusta os flex itens dentro do container maior */
+        width: 40%;
+        height: 100%;
+        display: flex;
+        justify-content: center;
+        flex-grow: 1 1 300px;
+        margin: 5%;
+    }
+    img{
+        display: flex;
+        width: 100%;
+        border-radius: 10px;
+    }
+}
+
+/*RODAPE*/
 footer{
-    position: fixed;
     bottom: 0;
     width: 100%;
     max-height: 100%;
+    margin-top: 5%;
     text-align: center;
     line-height: 100%;
 }
-
-
-
-
-
+#redes{
+    padding-top: 50%;
+    padding: 5%;
+    cursor: pointer;    
+    background: #A55FEB;
+}
+.social-icons a .fa{
+    color: #7944adfd;
+    padding: 5%;
+    font-size: 2em;
+    cursor: pointer;
+    transition: all ease-in-out 0.8s;
+}
+.social-icons a .fa:hover{
+    color: #FFFFFF;
+    cursor: pointer;
+    border-bottom: solid 1px #FFFFFF;
+}
