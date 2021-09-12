@@ -1,24 +1,29 @@
 {
   "todos": [
     {
-      "id": 1,
       "text": "Varrer a casa",
-      "done": true
+      "done": false,
+      "id": 1
     },
     {
-      "id": 2,
       "text": "Fazer a cama",
-      "done": false
+      "done": false,
+      "id": 2
     },
     {
-      "id": 3,
       "text": "Limpar o quintal",
-      "done": false
+      "done": false,
+      "id": 3
     },
     {
-      "text": "Sair com namorada",
-      "done": true,
+      "text": "Jogar video game",
+      "done": false,
       "id": 4
+    },
+    {
+      "text": "estudar",
+      "done": false,
+      "id": 5
     }
   ]
 }
